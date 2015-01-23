@@ -109,11 +109,10 @@ public class PictureTester
   /** Method to test the collage method */
   public static void testCollage()
   {
-    Picture mexico1 = new Picture("350x563.jpg");
-    Picture canvas = new Picture("350x563.jpg");
-    mexico1.explore();
+    Picture canvas = new Picture(350, 563);
     canvas.createCollage();
     canvas.explore();
+    canvas.write("H:\\GitHub\\unit6MediaComp\\images\\MyCollage.jpg");
   }
   
   /** Method to test edgeDetection */
